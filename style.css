@@ -1,0 +1,128 @@
+body{
+	background-image: url("2799006.jpg");
+}
+h1{
+	text-align: center;
+	text-shadow: 1px 1px 3px;
+}
+div.ribbon{
+	box-shadow: 5px 5px;
+	background-color: lightskyblue;
+}
+div.super{
+	display: flex;
+	flex-direction: row;
+}
+.flip-box {
+	margin-inline: 5%;
+	background-color: transparent;
+	opacity: 90%;
+	border: 1px solid #f1f1f1;
+	width: 350px;
+	height: 250px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+		transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	opacity: 1.0;
+  	-webkit-backface-visibility: hidden; /* Safari */
+  	backface-visibility: hidden;
+}
+.flip-box-front {
+		background-color: skyblue;
+		color: black;
+}
+.flip-box-back {
+		background-color: dodgerblue;
+		color: white;
+		transform: rotateY(-180deg);
+		opacity: 80%;
+}
+
+
+
+
+
+.flip-box-front-head {
+		background-color: skyblue;
+		color: black;
+}
+.flip-box-back-head {
+		background-color: dodgerblue;
+		color: white;
+		transform: rotateY(-180deg);
+		opacity: 80%;
+}
+.flip-box-front-head, .flip-box-back-head {
+	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	opacity: 1.0;
+  	-webkit-backface-visibility: hidden; /* Safari */
+  	backface-visibility: hidden;
+}
+.flip-box-head {
+	background-color: transparent;
+	opacity: 90%;
+	border: 1px solid #f1f1f1;
+	width: 350px;
+	height: 150px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-box-head:hover .flip-box-inner-head {
+		transform: rotateY(180deg);
+}
+.flip-box-inner-head {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+
+}
+#center{
+	margin: auto;
+		width: 50%;
+		padding: 10px;
+}
+.small{
+	font-size: 0.8em;
+}
+hi.title{
+	font-style: ;
+}
+ul {
+  	list-style-type: none;
+  	margin-inline-end: 20px;
+  	padding: 2;
+  	overflow: hidden;
+  	height: 30px;
+}
+li {
+	font-size: 20px;
+	text-shadow: 2px 2px 4px gold;
+	text-align: center;
+  	float: left;
+  	padding-inline: 10px;
+}
+li.a {
+  display: block;
+  padding: 8px;
+}
+li.a:hover{
+	background-color: dodgerblue;
+}
